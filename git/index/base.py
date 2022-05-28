@@ -352,6 +352,10 @@ class IndexFile(LazyMixin, git_diff.Diffable, Serializable):
         # tmp file created in git home directory to be sure renaming
         # works - /tmp/ dirs could be on another device
         tmp_index = tempfile.mktemp("", "", repo.git_dir)
+        print("-------------------------------------------------")
+        print(tmp_index)
+        print(type(tmp_index))
+        print("-------------------------------------------------")
         arg_list.append("--index-output=%s" % tmp_index)
         arg_list.extend(treeish)
 
