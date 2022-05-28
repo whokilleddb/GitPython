@@ -1,4 +1,5 @@
 """Module containing index utilities"""
+
 from functools import wraps
 import os
 import struct
