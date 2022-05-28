@@ -1,5 +1,4 @@
 """Module containing index utilities"""
-
 from functools import wraps
 import os
 import struct
@@ -45,8 +44,8 @@ class TemporaryFileSwap(object):
         print("======================================")
         print("File Path")
         print(f"Type:{type(self.file_path)}")
-        print(f"Obj: {self.file_path)}")
-        print(f"Str: {str(self.file_path))}")
+        print(f"Obj: {self.file_path}")
+        print(f"Str: {str(self.file_path)}")
         print(f"Abs Path: {os.path.abspath(file_path)}")
 
         print()
