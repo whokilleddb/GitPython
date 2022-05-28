@@ -41,6 +41,19 @@ class TemporaryFileSwap(object):
     def __init__(self, file_path: PathLike) -> None:
         self.file_path = file_path
         self.tmp_file_path = str(self.file_path) + tempfile.mktemp("", "", "")
+        print("======================================")
+        print("File Path")
+        print(f"Type:{type(self.file_path)}")
+        print(f"Obj: {self.file_path)}")
+        print(f"Str: {str(self.file_path))}")
+        print(f"Abs Path: {os.path.abspath(file_path)}")
+
+        print()
+        print("Tempfile")
+        print(f"Type: {type(self.tmp_file_path)}")
+        print(f"Abs: {os.path.abspath(tmp_file_path)}")
+        print("======================================")
+
         # it may be that the source does not exist
         try:
             os.rename(self.file_path, self.tmp_file_path)
