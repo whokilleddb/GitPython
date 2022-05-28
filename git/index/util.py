@@ -51,7 +51,7 @@ class TemporaryFileSwap(object):
         print()
         print("Tempfile")
         print(f"Type: {type(self.tmp_file_path)}")
-        print(f"Abs: {os.path.abspath(tmp_file_path)}")
+        print(f"Abs: {os.path.abspath(self.tmp_file_path)}")
         print("======================================")
 
         # it may be that the source does not exist
